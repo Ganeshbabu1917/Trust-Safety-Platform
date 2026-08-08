@@ -1,0 +1,5 @@
+FRONTEND/node_modules/
+**/node_modules/
+**/target/
+*.log
+*.csv

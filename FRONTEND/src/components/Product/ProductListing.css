@@ -1,0 +1,279 @@
+.product-page {
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.product-container h1 {
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Form Section */
+.form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1a237e;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group.half {
+    margin-bottom: 0;
+}
+
+.btn-analyze {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #e65100, #ff9800);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-analyze:hover:not(:disabled) {
+    transform: scale(1.02);
+}
+
+.btn-analyze:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Results Section */
+.results-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    min-height: 400px;
+}
+
+.placeholder {
+    text-align: center;
+    padding: 80px 20px;
+    color: #999;
+}
+
+.placeholder-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background: #ffebee;
+    color: #b71c1c;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #b71c1c;
+}
+
+/* Result Card */
+.result-card {
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.counterfeit-score {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.score-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.score-number {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.score-details h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.score-details p {
+    color: #666;
+}
+
+.product-details {
+    background: #f5f5f5;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-details h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.detail-row {
+    display: flex;
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row .label {
+    font-weight: 600;
+    color: #666;
+    width: 80px;
+}
+
+.detail-row .value {
+    color: #333;
+}
+
+.authenticity-reasons {
+    background: #fff3e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.authenticity-reasons h4 {
+    margin-bottom: 10px;
+    color: #e65100;
+}
+
+.authenticity-reasons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.authenticity-reasons ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ffe0b2;
+    color: #555;
+}
+
+.authenticity-reasons ul li:last-child {
+    border-bottom: none;
+}
+
+.authenticity-action {
+    margin-bottom: 20px;
+}
+
+.authenticity-action h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.authenticity-action button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.authenticity-action button:hover {
+    transform: scale(1.05);
+}
+
+.btn-reject {
+    background: #b71c1c;
+    color: white;
+}
+
+.btn-review {
+    background: #ff9800;
+    color: white;
+}
+
+.btn-approve {
+    background: #2e7d32;
+    color: white;
+}
+
+.authenticity-timestamp {
+    text-align: right;
+    color: #999;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
