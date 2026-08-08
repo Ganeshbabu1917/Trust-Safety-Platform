@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Trust-Safety-Platform/static/css/main.02221962.css",
+    "main.js": "/Trust-Safety-Platform/static/js/main.d179a5d1.js",
+    "index.html": "/Trust-Safety-Platform/index.html",
+    "main.02221962.css.map": "/Trust-Safety-Platform/static/css/main.02221962.css.map",
+    "main.d179a5d1.js.map": "/Trust-Safety-Platform/static/js/main.d179a5d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02221962.css",
+    "static/js/main.d179a5d1.js"
+  ]
+}
